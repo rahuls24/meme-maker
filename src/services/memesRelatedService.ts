@@ -1,7 +1,7 @@
 export async function makeMeme(payload: any) {
 	const formData = new FormData();
-	const username = process.env.USERNAME??'';
-	const password = process.env.PASSWORD??'';
+	const username = process.env.REACT_APP_USERNAME??'';
+	const password = process.env.REACT_APP_PASSWORD??'';
 	formData.append('username', username);
 	formData.append('password', password);
 	formData.append('template_id', payload.templedId);

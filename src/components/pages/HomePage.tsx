@@ -38,7 +38,6 @@ function HomePage() {
       }
     }
   }, [error]);
-  console.log(isOnline);
   return (
     <>
       <AppHeader />
